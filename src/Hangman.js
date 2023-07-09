@@ -81,7 +81,7 @@ class Hangman extends Component {
           this.props.images[this.props.maxWrong] :
           this.props.images[this.state.nWrong]
         } />
-        <p>Guess the word. Only <b>{this.props.maxWrong + 1}</b> wrong guessed allowed</p>
+        <p>Guess the word. Only <b>{this.props.maxWrong + 1}</b> wrong guesses allowed</p>
         <p>Wrong Guesses: {this.state.nWrong}/{this.props.images.length}</p>
         <p className='Hangman-word'>{this.guessedWord()}</p>  
           {
