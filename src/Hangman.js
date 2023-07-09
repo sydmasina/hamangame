@@ -81,11 +81,11 @@ class Hangman extends Component {
           this.props.images[this.props.maxWrong] :
           this.props.images[this.state.nWrong]
         } />
-        <p>Guess the word. Only <b>{this.props.maxWrong + 1}</b> wrong guesses allowed</p>
-        <p>Wrong Guesses: {this.state.nWrong}/{this.props.images.length}</p>
+        <p>Guess the word. Only <b>{this.props.maxWrong}</b> wrong guesses allowed</p>
+        <p>Wrong Guesses: {this.state.nWrong}/{this.props.maxWrong}</p>
         <p className='Hangman-word'>{this.guessedWord()}</p>  
           {
-            this.state.nWrong > this.props.maxWrong ?
+            this.state.nWrong >= this.props.maxWrong ?
             <p>You lose! The correct word was: <b>{this.state.answer}</b></p>
             :
             <p className='Hangman-btns'>{this.generateButtons()}</p>
