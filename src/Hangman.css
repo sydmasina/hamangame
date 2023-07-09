@@ -31,6 +31,29 @@
   margin-top: 0;
 }
 
+#Hangman-Reset-btn {
+  text-align: center;
+  width: 250px;
+  margin-top: 0;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 60px;
+  margin: 5px 2px 2px 2px;
+  letter-spacing: 1px;
+  outline: none;
+  background: #f00000;
+  color: #fff;
+  box-shadow: 0 6px #c50000;
+  border-radius: 5px;
+  padding-top: 4px;
+  
+}
+#refresh-icon{
+  display: inline-block;
+}
+
 .Hangman button {
   border: none;
   font-family: inherit;
